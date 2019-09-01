@@ -22,7 +22,8 @@ public class A1Novice {
 				double price = scan.nextDouble();
 				total = total + count * price;
 			}
-			System.out.println(first + ". " + last + ": " + total);
+			String newTotal = String.format("%.2f", total);
+			System.out.println(first + ". " + last + ": " + newTotal);
 		}
 		
 		scan.close();
